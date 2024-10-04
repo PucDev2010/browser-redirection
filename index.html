@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mở Cửa Sổ Pop-up</title>
+</head>
+<body>
+    <!-- Nút để mở cửa sổ pop-up -->
+    <button onclick="openPopup()">Mở Pop-up Đè</button>
+
+    <script>
+        function openPopup() {
+            
+            var width = window.innerWidth;
+            var height = window.innerHeight;
+            var left = window.screenX;
+            var top = window.screenY;
+            window.open(
+                "http://127.0.0.1:5500/index1.html", 
+                "popupWindow", 
+                "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top + ",scrollbars=no"
+            );
+        }
+    </script>
+</body>
+</html>
